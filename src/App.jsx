@@ -1,0 +1,26 @@
+import React from 'react'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
+import About from './Components/About'
+import Services from './Components/Services'
+import Tours from './Components/Tours'
+import Footer from './Components/Footer'
+import { serviceData, toursData } from './data'
+
+
+
+
+const App = () => {
+  return (
+    <>
+    <Navbar/>
+    <Hero/>
+    <About/>
+    <Services data={serviceData}/>
+    <Tours data={toursData}/>
+    <Footer/>
+    </>
+  )
+}
+
+export default App 
